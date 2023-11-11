@@ -34,7 +34,7 @@ jobs:
 
       - name: Show environment
         run: |
-          set | grep "CI_"
+          printenv
 
       # Build steps
       - name: Add artifact
