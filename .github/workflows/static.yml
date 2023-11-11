@@ -34,12 +34,12 @@ jobs:
 
       - name: Show environment
         run: |
-          printenv
+          printenv \| grep CI_
 
       # Build steps
       - name: Add artifact
         run: |
-          date >> docs/index.html
+          date >> web_download/index.html
 
       # Commit and push all changed files. 
       # Must only affect files that are listed in "paths-ignore".
