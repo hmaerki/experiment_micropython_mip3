@@ -101,6 +101,7 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+          path: 'web_download'
 
       - name: Deploy to GitHub Pages
         id: deployment
