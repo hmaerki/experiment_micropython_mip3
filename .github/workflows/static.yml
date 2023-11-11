@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  build and commit:
+  build-and-commit:
     # environment:
     #   name: github-pages
     #   url: ${{ steps.deployment.outputs.page_url }}
@@ -77,7 +77,7 @@ jobs:
       #   uses: actions/deploy-pages@v2
 
   # Single deploy job since we're just deploying
-  deploy folder web_download:
+  deploy-folder-web_download:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
